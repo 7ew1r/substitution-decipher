@@ -7,10 +7,8 @@
      * @return {object} オブジェクト
      */
   function range(first, last) {
-    const firstC = first.charCodeAt(0);
-    const lastC = last.charCodeAt(0);
     const result = [];
-    for (let i = firstC; i <= lastC; i++) {
+    for (let i = first.charCodeAt(0); i <= last.charCodeAt(0); i++) {
       const obj = {};
       obj.key = String.fromCodePoint(i);
       obj.convertTo = String.fromCodePoint(i);
@@ -19,13 +17,13 @@
     return result;
   }
 
-  const alphabetPairs = range('A', 'Z');
+  const alphabets = range('A', 'Z');
 
   const vm = new Vue({
     el: '#app',
     data: {
       cipher: 'CIPHER HERE',
-      alphabetPairs: alphabetPairs,
+      alphabets: alphabets,
     },
     filters: {
       alignDegit: function(value) {
@@ -43,9 +41,9 @@
           let flag = false;
           const obj = {};
           for (let j = 0; j < 26; j++) {
-            if (splitStr[i] === this.alphabetPairs[j].key) {
-              obj.chara = this.alphabetPairs[j].convertTo;
-              if (this.alphabetPairs[j].key === this.alphabetPairs[j].convertTo) {
+            if (splitStr[i] === this.alphabets[j].key) {
+              obj.chara = this.alphabets[j].convertTo;
+              if (this.alphabets[j].key === this.alphabets[j].convertTo) {
                 obj.isChange = false;
               } else {
                 obj.isChange = true;

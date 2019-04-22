@@ -24,7 +24,7 @@
       </div>
       <div class="flex__right">
         <ul>
-          <li v-for="c in alphabetPairs">
+          <li v-for="c in alphabets">
             {{ c.key }} <span class="small_text">( <span class="charaCount">{{ charaCount(c.key) | alignDegit }}</span>
               )
               <span class="charaRate">{{ charaRate( charaCount(c.key)) | numberWithPercent }}</span> :
