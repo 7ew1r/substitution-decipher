@@ -1,0 +1,50 @@
+.flex__container {
+    display: flex;
+}
+
+.code_input {
+    font-family: "Courier New",
+        Consolas,
+        monospace;
+    font-size: 20px;
+    width: 650px;
+    height: 250px;
+}
+
+.plaintext {
+    font-family: "Courier New";
+    width: 650px;
+    height: 250px;
+    font-size: 20px;
+    border: solid 1px black;
+    background-color: #dddddd;
+}
+
+.color_red {
+    color: red;
+}
+
+ul {
+    list-style: none;
+    font-family: "Courier New", monospace;
+}
+
+ul input {
+    width: 20px;
+}
+
+.charaCount {
+    display: inline-block;
+    text-align: right;
+    width: 1.2em;
+}
+
+.charaRate {
+    display: inline-block;
+    text-align: right;
+    width: 3.5em;
+}
+
+.small_text {
+    font-size: 0.8em;
+}
