@@ -4,7 +4,8 @@ module.exports = {
         "es6": true
     },
     "extends": [
-        "eslint:recommended",
+        "google",
+        // "eslint:recommended",
         "plugin:vue/essential"
     ],
     // "globals": {
@@ -17,7 +18,5 @@ module.exports = {
     "plugins": [
         "vue"
     ],
-    "rules": {
-
-    }
+    "rules": {}
 };
