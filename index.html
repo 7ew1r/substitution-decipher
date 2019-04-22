@@ -12,11 +12,11 @@
   <div id="app">
     <div class="flex__container">
       <div class="flex__left">
-        <textarea class="code_input" type="text" v-model="cipher"></textarea>
+        <textarea class="cipher_input" type="text" v-model="cipher"></textarea>
         <div>
           <h2>Plaintext</h2>
           <div class="plaintext">
-            <span v-for="chara in decodeString">
+            <span v-for="chara in decipherString">
               <span v-bind:class="{ color_red:chara.isChange }">{{ chara.chara }}</span>
             </span>
           </div>
@@ -25,7 +25,8 @@
       <div class="flex__right">
         <ul>
           <li v-for="c in alphabets">
-            {{ c.key }} <span class="small_text">( <span class="charaCount">{{ charaCount(c.key) | alignDegit }}</span>
+            {{ c.key }} <span class="small_text">( <span
+                class="charaCount">{{ charaCount(c.key) | numberAlignment }}</span>
               )
               <span class="charaRate">{{ charaRate( charaCount(c.key)) | numberWithPercent }}</span> :
               <input type="text" v-model="c.convertTo"></span>
