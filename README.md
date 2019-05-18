@@ -13,4 +13,4 @@ This tool was created to solve puzzles of the game "Cypher", which is based on c
 
 ## License
 
-[MIT](http://b4b4r07.mit-license.org)
+MIT
