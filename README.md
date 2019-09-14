@@ -1,5 +1,4 @@
-Substitution Cipher Decipher
-===
+# Substitution Cipher Decipher
 
 The tool for solving "substitution cipher"
 
